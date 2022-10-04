@@ -1,0 +1,299 @@
+/*
+-- Estilos CSS
+*/
+
+
+/*
+-- Padrões e Reset
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    font-size: 62.5%;
+    /* 1rem = 10px*/
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'DM Sans';
+    font-size: 1.6rem;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+img,
+fieldset {
+    border: 0;
+}
+
+
+/*
+  -- Tipografia e Cores
+  */
+
+
+/* color: teal, blue, light blue, light green, green, light gray */
+
+body {
+    background-color: lightcyan;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#cabecalho {
+    background-color: teal;
+}
+
+#rodape {
+    background-color: lightblue;
+}
+
+nav li a:hover,
+a.selected:hover,
+nav li a:focus,
+a.selected:focus {
+    transition: 500ms;
+    color: rgb(114, 243, 114);
+}
+
+nav li a.selected {
+    font-weight: bold;
+    color: white;
+}
+
+nav a {
+    padding: 2.5rem;
+    color: rgb(255, 255, 255, 0.75);
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body #conteudo-principal header h1
+/*seleciona titulos dentro de headers dentro de tags com id conteudo-principa dentro do body*/
+
+{
+    font-size: 4.2rem;
+    color: rgb(0, 96, 96);
+}
+
+
+/*
+-- Estrutura
+*/
+
+nav,
+#conteudo,
+footer {
+    width: 130rem;
+    margin: 0 auto;
+}
+
+#conteudo {
+    margin: 3rem auto 0 auto;
+}
+
+#conteudo-principal {
+    float: left;
+    width: 90rem;
+    padding: 2rem;
+}
+
+#conteudo-secundario {
+    float: right;
+    width: 28rem;
+    background-color: teal;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.7rem;
+    height: 65rem;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#conteudo-secundario a {
+    color: white;
+    margin: 1rem;
+    font-size: 1.8rem;
+}
+
+#conteudo-secundario a img {
+    max-width: 16rem;
+    height: auto;
+}
+
+#rodape,
+nav {
+    height: 8rem;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+    /* padding-top: 1rem; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    max-width: 30rem;
+    height: auto;
+}
+
+#logo {
+    padding: 5px 0;
+    display: block;
+    float: left;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav ul {
+    box-sizing: initial;
+}
+
+#rodape {
+	margin-top: auto;
+    width: 100%;
+    text-align: end;
+}
+
+#emailtel {
+    text-align: start;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+#conteudo-principal header {
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+#conteudo-principal img {
+    max-width: 90rem;
+    height: auto;
+}
+
+#conteudo-principal p {
+    font-size: 2rem;
+    line-height: 2.7rem;
+}
+
+
+/*
+-- Estilos específicos de Seção
+*/
+
+#conteudo-principal li {
+    font-size: 2rem;
+    list-style: inside;
+    color: teal;
+    font-weight: bold;
+}
+
+#conteudo-principal .par {
+    color: rgb(20, 172, 172);
+}
+
+
+/*
+-- Formulários
+*/
+fieldset {
+	background-color: lightblue;
+	padding: 3rem;
+	border-radius: 2rem;
+}
+
+label {
+    font-size: 2.2rem;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+	resize: none;
+}
+
+input[type=submit],
+input[type=reset] {
+    background-color: teal;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: rgb(2, 173, 173);
+}
+option[value="0"] {
+    display: none;
+	color: #ccc;
+}
+
+/*
+-- Tabelas
+*/
+
+#conteudo-principal table {
+    border: 0.1rem solid rgb(2, 187, 187);
+    padding: 0rem;
+    background-color: teal;
+}
+
+#conteudo-principal table .titles td {
+    padding: 0.5rem;
+    padding-inline: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: teal;
+    color: white;
+    margin: 0;
+    border-right: 0.1rem solid white;
+}
+
+#conteudo-principal table td {
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+#conteudo-principal table .destaque {
+    background-color: rgb(159, 253, 222);
+}
+
+
+/*
+-- Classes de Uso Geral
+*/

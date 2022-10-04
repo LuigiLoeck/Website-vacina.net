@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <div id="cabecalho">
+        <nav id="menu">
+            <!-- Logo -->
+            <a href="index.html" id="logo"><img src="./images/logo-vacinas-branco_reduzido.png" alt="Logo da pagina"></a>
+            <!-- Menu -->
+            <ul>
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./vacinas.html">Vacinas</a></li>
+                <li><a href="./sintomas.html">Sintomas</a></li>
+                <li><a href="./contact.html" class="selected">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Conteudo -->
+    <div id="conteudo">
+        <!-- Conteudo principal -->
+        <div id="conteudo-principal">
+            <fieldset>
+                <form action="action.php">
+
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome completo">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+					
+					<label for="regiao">Região</label>
+					<select name="regiao" id="regiao">
+						<option value="" disabled selected hidden>Região</option>
+						<option value="1">Norte</option>
+						<option value="2">Nordeste</option>
+						<option value="3">Centro-oeste</option>
+						<option value="4">Sudeste</option>
+						<option value="5">Sul</option>
+						
+					</select>
+
+                    <label for="assunto">Assunto</label>
+                    <textarea id="assunto" name="assunto" placeholder="Envie duvidas, sugestões e criticas" style="height:200px"></textarea>
+
+                    <input type="radio" name="termos" id="termos" /><label for="termos"> Aceitar termos e uso de privacidade</label><br>
+                    <input type="checkbox" name="noticia" id="noticia" /><label for="noticia"> Deseja receber noticias importantes sobre o assunto</label><br>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Excluir">
+
+                </form>
+            </fieldset>
+        </div>
+    </div>
+    <!-- Rodapé -->
+    <div id="rodape">
+        <footer>
+            <p id="emailtel">
+                contato@vacinas.net
+                <br> 51 3217.4114
+            </p>
+
+            <p id="endereco">
+                R. Domingos Crescêncio, 405
+                <br> CEP 90650-090
+                <br> Porto Alegre - RS
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
